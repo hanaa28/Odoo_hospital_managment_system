@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <record id='hms_department' model='ir.actions.act_window'>
+            <field name='name'>departments</field>
+            <field name='res_model' >hms_department</field>
+        </record>
+    ]
+      
+        <menuitem name='department' id='department_menu' sequence='3' parent='hmsmenu' action='hms_department'/>
+    </data>
+</odoo>
