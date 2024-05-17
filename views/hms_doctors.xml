@@ -5,7 +5,36 @@
             <field name='res_model' >hms.doctor</field>
         </record>
     ]
-      
-        <menuitem name='doctors' id='doctors_menu' sequence='1' parent='hmsmenu' action='hms_doctors'/>
+        <menuitem name='doctors' id='doctors_menu' sequence='3' parent='hmsmenu' action='hms_doctors'/>
+        <!-- tree view -->
+        <record id="hms.doctor_tree_view" model="ir.ui.view">
+            <field name="name">tree doctor</field>
+            <field name="model">hms.doctor</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree class="custom-header" >
+                    <field name="fname"/>
+                    <field name="lname"/>
+                    <field name="image"/>
+                </tree>
+            </field>
+        </record>
+        <!-- form view -->
+        <record id='doctor_form_view' model='ir.ui.view'>
+            <field name="name">doctor Form View</field>
+            <field name="model">hms.doctor</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group string="General Information">
+                            <field name="fname"/>
+                            <field name="lname"/>
+                            <field name="image"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
     </data>
 </odoo>

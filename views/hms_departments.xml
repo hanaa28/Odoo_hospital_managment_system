@@ -5,7 +5,35 @@
             <field name='res_model' >hms_department</field>
         </record>
     ]
-      
-        <menuitem name='department' id='department_menu' sequence='3' parent='hmsmenu' action='hms_department'/>
+        <menuitem name='department' id='department_menu' sequence='2' parent='hmsmenu' action='hms_department'/>
+        <!-- tree view -->
+        <record id="hms_department_tree_view" model="ir.ui.view">
+            <field name="name">tree Department</field>
+            <field name="model">hms_department</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree class="custom-header" >
+                    <field name="name"/>
+                    <field name="is_opened"/>
+                </tree>
+            </field>
+        </record>
+        <!-- form view -->
+        <record id='department_form_view' model='ir.ui.view'>
+            <field name="name">Department Form View</field>
+            <field name="model">hms_department</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group string="General Information">
+                            <field name="name"/>
+                            <field name="is_opened"/>
+                            <field name="capacity"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
     </data>
 </odoo>

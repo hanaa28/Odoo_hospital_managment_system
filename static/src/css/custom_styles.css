@@ -1,0 +1,45 @@
+.custom-header th {
+    background-color: #041e2b; 
+    color: #31708f; 
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #31708f;  
+
+}
+.custom-header td {
+    background-color: #373e42; 
+    color: white; 
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #32708f; 
+    border-right: 2px solid #31708f; 
+    text-align: center;
+
+
+}
+.custom-header td:first-child {
+    border-left: 2px solid #31708f; 
+}
+ .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: none;
+    
+}
+.table thead th{
+    border-bottom:none;
+}
+
+.o_list_view .o_list_table thead > tr > th:not(.o_list_record_selector) {
+    border-left: none;
+ 
+}
+
+.o_list_view .o_list_table thead > tr > th:not(.o_list_record_selector).o_list_number_th {
+    text-align: center;
+}
+.o_list_view .o_list_table tbody > tr > td:not(.o_list_record_selector).o_list_number {
+    text-align: center;
+}
