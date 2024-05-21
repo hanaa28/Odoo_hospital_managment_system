@@ -31,6 +31,7 @@
                         <group string="General Information">
                             <field name="firstName" />
                             <field name="lastName" />
+                            <field name="email" />
                             <field name="age" />
                             <field name="history" attrs="{'invisible': [('age', '&lt;', 50)]}" />
                             <field name="address" />
